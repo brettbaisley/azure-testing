@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <h2>List of Cities</h2>
+    <ul>
+      <% cities.forEach( (city) => { %>
+        <li>
+          <%= city.city %>, <%= city.state %>  <%= city.country %>
+        </li>
+      <% }); %>
+    </ul>
+  
+  
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+  
+  </body>
+</html>
